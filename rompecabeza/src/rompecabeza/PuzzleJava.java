@@ -123,21 +123,47 @@ public class PuzzleJava {
 		
 //		int[] Arregl = new int[10];
 //		Random random = new Random();
-//		int low = 55;
-//		int high = 100;
+//		int menor = 55;
+//		int mayor = 100;
 //		
 //		for (int y = 0; y < Arregl.length; y++) {
-//			int result = random.nextInt(high-low) + low;
+//			int result = random.nextInt(mayor-menor) + menor;
 //			System.out.println(result);
 //			Arregl[y] = result;//asignando a la posicion el resultado
 //			}
 //		System.out.println(Arrays.toString(Arregl));
 
+	   //Quinta Actividad
+//		int[] Arregl = new int[10];
+//		Random random = new Random();
+//		int menor = 55;
+//		int mayor = 100;
+//		int max;
+//		int min;
+//		max = Arregl[0];
+//		min = Arregl[0];
+//		
+//		for (int y = 0; y < Arregl.length; y++) {
+//			int result = random.nextInt(mayor-menor) + menor;
+//			System.out.println(result);
+//			Arregl[y] = result;//asignando a la posicion el resultado
+//			}
+//
+//		System.out.println(Arrays.toString(Arregl));
+//		Arrays.sort(Arregl);
+//		System.out.println(Arrays.toString(Arregl));
+//
+//		for (int c = 0; c < Arregl.length; c++) {
+//			if (Arregl[c] > max) {
+//				max = Arregl[c];
+//			}
+//			if (Arregl[c] < min) {
+//				min = Arregl[c];
+//			}
+//		}
+//		System.out.println("El maximo valor es: " + max);
+//		System.out.println("El minimo valor es: " + min);
 		
-
-
-
-
 	}
 
 }

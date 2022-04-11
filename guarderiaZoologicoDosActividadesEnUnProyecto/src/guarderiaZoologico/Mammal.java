@@ -2,10 +2,21 @@ package guarderiaZoologico;
 
 public class Mammal {
 	
-	public String energyLevel;
+	private int energyLevel;
 	
-	public void desiplayEnergy() {}
-	
-    public void displayEnergy() {}
+
+	public Mammal(int energyLevel) {
+	 this.energyLevel = energyLevel;	
+	}
+
+
+	public int getEnergyLevel() {
+		return energyLevel;
+	}
+
+
+	public void displayEnergy() {
+		System.out.println(getEnergyLevel());
+	}
 	
 }

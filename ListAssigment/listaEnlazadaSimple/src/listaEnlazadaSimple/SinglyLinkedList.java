@@ -2,10 +2,13 @@ package listaEnlazadaSimple;
 
 public class SinglyLinkedList {
 	public Node head;
-
+	public Node newNode;
+	public int temporal;
     public SinglyLinkedList() {
 
-        
+       this.head = null; 
+       this.newNode = null;
+       this.temporal = 4;
 
     }
 
@@ -13,7 +16,7 @@ public class SinglyLinkedList {
 
     public void add(int value) {
 
-        Node newNode = new Node(value);
+        newNode = new Node(value);
 
         if(head == null) {
 
@@ -30,18 +33,38 @@ public class SinglyLinkedList {
             }
 
             runner.next = newNode;
+            
 
-        }
+        }      
+
 
     }
+    
+	public int remove() {
 
-	public void remove() {
-		
-		
+		int elemento = head.value;
+		if (newNode == head) {
+			newNode = head = null;
+		} else {
+			Node temporal = newNode;
+			while (temporal.next != head) {
+				temporal = temporal.next;
+			}
+			head = temporal;
+			head.next = null;
+		}
+		return elemento;
 	}
+
+
+	 
 
 	public void printValues() {
 		
-		
+		Node recorrer = newNode;
+		while(recorrer!=null) {
+			System.out.println("["+recorrer.value+"]--->");
+			recorrer = recorrer.next;
+		}
 	}    
 }

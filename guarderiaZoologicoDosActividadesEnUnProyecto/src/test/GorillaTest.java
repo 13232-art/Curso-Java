@@ -1,5 +1,6 @@
 package test;
 
+import guarderiaZoologico.Bat;
 import guarderiaZoologico.Gorilla;
 
 public class GorillaTest {
@@ -10,6 +11,17 @@ public class GorillaTest {
         gorilla.eatBananas();
         gorilla.eatBananas();
         gorilla.climb();
+        
+        Bat bat = new Bat(300);
+        bat.displayEnergy();
+        bat.attackTown();
+        bat.attackTown();
+        bat.attackTown();
+        bat.eatHumans();
+        bat.eatHumans();
+        bat.fly();
+        bat.fly();
+        
 	}
 
 }

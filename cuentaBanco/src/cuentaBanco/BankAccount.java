@@ -33,8 +33,21 @@ public class BankAccount {
 
 
 	public int numerosAleatorios() {
-		numeroCuenta = (int) (Math.random()*10+1);
+		
+		if(numeroCuenta!=0) {
+			numeroCuenta = (int) (Math.random()*10+1);
+		}else {
+			System.out.println("No permita que retire dinero si tiene fondos insuficientes");
+		}
 		return numeroCuenta;
 		
+	}
+	
+	public double cuentaCorriente() {
+		return saldoCuentaCorriente;
+	}
+	
+	public double cuentaAhorro() {
+		return saldoCuentaAhorro;
 	}
 }

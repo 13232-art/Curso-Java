@@ -9,4 +9,12 @@ public class Ninja extends Human{
 		
 	}
 
+	public void steal() {
+		System.out.println("roba la cantidad de puntos que tenga el Ninja en stealth de la salud del otro Human y los agrega a la health del Ninja");
+	}
+	
+	public void runAway() {
+		System.out.println("reduce su salud en 10");
+	}
+	
 }
